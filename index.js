@@ -1,5 +1,4 @@
 
-
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const path = require('path')
@@ -15,7 +14,7 @@ const questions = [
     },
      {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message:'Enter your project description'
      
     },
@@ -23,19 +22,15 @@ const questions = [
         type: 'input',
         name: 'github',
         message:'Enter your GitHub Username'
+        
      
     },
     {
         type: 'input',
-        name: 'Email',
+        name: 'email',
         message:'Enter your Email'
      
     },
-    {
-        type: 'confirm',
-        name: 'TableOfContents',
-        message:'Enter your table of contents'
-     },
      
      {
         type: 'input',
@@ -50,21 +45,33 @@ const questions = [
      },
      {
         type: 'input',
-        name: 'Contributing',
-        message:'How do you use this project'
+        name: 'test',
+        message:'What should be done to run the test?'
      },
+     {
+        type: 'input',
+        name: 'contributing',
+        message:'Please add contributions?'
+     },
+     
     {
         type: 'list',
         name: 'license',
         message:'Enter your license ',
         choices: ['MIT License', 'GNU GPL 2.0', 'Apache License 2.0', 'GNU GPL 3.0' ]
-     
-    }
+     },
+     {
+        type: 'confirm',
+        name: 'tableOfContents',
+        message:'Enter your table of contents'
+        
+     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(),fileName),data)
+    
 }
 
 // TODO: Create a function to initialize app
