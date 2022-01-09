@@ -13,7 +13,7 @@ const questions = [
         message:'Enter your title'
      
     },
-    {
+     {
         type: 'input',
         name: 'Description',
         message:'Enter your project description'
@@ -21,16 +21,43 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'github',
+        message:'Enter your GitHub Username'
+     
+    },
+    {
+        type: 'input',
+        name: 'Email',
+        message:'Enter your Email'
+     
+    },
+    {
+        type: 'confirm',
+        name: 'TableOfContents',
+        message:'Enter your table of contents'
+     },
+     
+     {
+        type: 'input',
         name: 'instalation',
         message:'Enter your instaltion packages',
         default:'npm i'
-     
-    },
+     },
+     {
+        type: 'input',
+        name: 'useage',
+        message:'How do you use this project'
+     },
+     {
+        type: 'input',
+        name: 'Contributing',
+        message:'How do you use this project'
+     },
     {
         type: 'list',
         name: 'license',
         message:'Enter your license ',
-        choices: ['']
+        choices: ['MIT License', 'GNU GPL 2.0', 'Apache License 2.0', 'GNU GPL 3.0' ]
      
     }
 ];
