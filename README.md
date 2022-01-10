@@ -1,14 +1,9 @@
-# Readme
-  ![GitHub](https://img.shields.io/github/license-MIT/Tanyaskubon/Readme?color=green&style=flat-square)
+# README.md
+  ![GitHub](https://img.shields.io/github/license/Tanyaskubon/Readme?color=green&style=social)
   
-  
-ReadMe Generator
+ ## Description 
+This application was created to generate a high-quality README.md. This application allows users to dynamically create a README
 
-## Github Username
-Tanyaskubon
-
-## Email
-undefined
 
 ## Table Of Contents
 * [Description](#description)
@@ -17,18 +12,19 @@ undefined
 * [Contributing](#contributing)
 * [License](#license)
 
+
 ## Installation
-npm i
+A user should clone the starter code, install node.js, use inquire and file system
 ## Useage
-to create a read me file
+A user would clone the repository and use this application to create fast high-quality README.md
 ## License 
 Project license  MIT
 
 ## Contributing
-I used shields.io to create
+node.js, repository clone and inquire https://watch.screencastify.com/v/4y4av6spwi5HuLsPP81l
 
 ## Tests
-npm test
+undefined
 
 ## Questions
 If you have any questions please contact me at tanyaskubon25@gmail.com
